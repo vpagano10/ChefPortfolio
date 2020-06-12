@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SVGImage from "./SVGImage";
 import "../scss/Style.scss";
 
@@ -14,7 +15,9 @@ export default function Home() {
           <br /> have a favorite chef search for them specifically.
         </div>
         <div>
-          <button className="home-btn">Start Now</button>
+          <Link to="/recipes" className="home-btn">
+            Start Now
+          </Link>
         </div>
       </div>
 

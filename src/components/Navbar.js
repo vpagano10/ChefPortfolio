@@ -12,6 +12,7 @@ import Chefs from "./ChefList";
 import EditRecipe from "./EditRecipe";
 import CreateRecipe from "./CreateRecipe";
 import IndividualChef from "./IndividualChef";
+import ProtectedRoute from "./utils/ProtectedRoute";
 import "../scss/Style.scss";
 
 function Navbar() {
@@ -96,11 +97,11 @@ function Navbar() {
       <Route exact path="/register" component={Register} />
       <Route exact path="/logout" component={Logout} />
 
-      <Route exact path="/recipes" component={Recipes} />
-      <Route exact path="/chefs" component={Chefs} />
-      <Route exact path="/createrecipe/:id" component={CreateRecipe} />
-      <Route exact path="/editrecipie/:id" component={EditRecipe} />
-      <Route exact path="/chef/:id" component={IndividualChef} />
+      <ProtectedRoute exact path="/recipes" component={Recipes} />
+      <ProtectedRoute exact path="/chefs" component={Chefs} />
+      <ProtectedRoute exact path="/createrecipe/:id" component={CreateRecipe} />
+      <ProtectedRoute exact path="/editrecipie/:id" component={EditRecipe} />
+      <ProtectedRoute exact path="/chef/:id" component={IndividualChef} />
     </>
   );
 }

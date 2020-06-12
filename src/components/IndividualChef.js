@@ -18,9 +18,9 @@ function IndividualChef(props) {
 
   return (
     <>
-      <div className="pimg5">
-        <div className="ptext">
-          <span className="border">Featured Chefs</span>
+      <div className="">
+        <div className="">
+          <h2>Featured Chef</h2>
         </div>
       </div>
 
