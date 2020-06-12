@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "./utils/Api";
+import "../scss/FormPages.scss";
 
 export default function CreateRecipe(props) {
   const [recipie, setRecipie] = useState([]);
@@ -18,7 +19,7 @@ export default function CreateRecipe(props) {
     api()
       .post("/api/posts/create", recipie)
       .then((res) => {
-        props.history.push("/recipies");
+        props.history.push("/recipes");
       })
       .catch((err) => {
         console.log("Error creating new recipie", err);
@@ -27,15 +28,15 @@ export default function CreateRecipe(props) {
 
   return (
     <>
-      <div className="pimg4">
-        <div className="ptext">
-          <span className="border">Creating: '{recipie.title}'</span>
+      <div className="create-recipe-title">
+        <div className="">
+          <span className="">Creating: '{recipie.title}'</span>
         </div>
       </div>
 
-      <div className="form-container">
-        <form className="edit-form" onSubmit={handleSubmit}>
-          <Link className="cancel-link" to="/recipies">
+      <div className="form-page-container">
+        <form className="edit-form-container" onSubmit={handleSubmit}>
+          <Link className="cancel-link" to="/recipes">
             Cancel
           </Link>
           <label>Title</label>
@@ -80,7 +81,9 @@ export default function CreateRecipe(props) {
             onChange={handleChange}
             placeholder="Locaiton"
           />
-          <button type="submit">Save</button>
+          <button className="form-submit-btn" type="submit">
+            Save
+          </button>
         </form>
       </div>
     </>

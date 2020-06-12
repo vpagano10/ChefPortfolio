@@ -110,3 +110,35 @@ body {
   .svg-container {
   }
 }
+
+.create-recipe-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+
+.chef-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1250px;
+  .chef-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 75px;
+    background-color: #212121;
+    margin: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font: initial;
+    font-size: 1.2rem;
+    &:hover {
+      cursor: pointer;
+      background-color: #586b9f;
+    }
+  }
+}

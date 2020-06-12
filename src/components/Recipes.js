@@ -69,11 +69,11 @@ export default function Recipes(handleSubmit) {
             setFilteredRecipies(res.data);
           })
           .catch((err) => {
-            console.log("Error deleting recipie", err);
+            console.log("Error deleting recipe", err);
           });
       })
       .catch((err) => {
-        console.log("Error getting recipie to delete", err);
+        console.log("Error getting recipe to delete", err);
       });
   };
 
@@ -85,7 +85,7 @@ export default function Recipes(handleSubmit) {
       <>
         <div className="recipies-page">
           <div>
-            <Link to="/createrecipe" className="add-recipie">
+            <Link to="/addrecipe/:id" className="add-recipie">
               +
             </Link>
             <form>

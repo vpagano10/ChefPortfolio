@@ -18,7 +18,7 @@ function IndividualChef(props) {
 
   return (
     <>
-      <div className="">
+      <div className="create-recipe-title">
         <div className="">
           <h2>Featured Chef</h2>
         </div>

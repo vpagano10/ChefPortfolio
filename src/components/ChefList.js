@@ -19,9 +19,9 @@ function ChefList() {
 
   return (
     <>
-      <div className="pimg5">
-        <div className="ptext">
-          <span className="border">Featured Chefs</span>
+      <div className="create-recipe-title">
+        <div className="">
+          <span className="">Featured Chefs</span>
         </div>
       </div>
 

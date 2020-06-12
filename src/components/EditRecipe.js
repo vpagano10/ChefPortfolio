@@ -13,7 +13,6 @@ function EditRecipie(props) {
     location: "",
   });
 
-  //   Need to get (might have to grab the backend code and create a route for this) a route that lets me grab a specific post in the useEffect
   useEffect(() => {
     api()
       .get(`/api/posts/${props.match.params.id}`)
@@ -38,7 +37,7 @@ function EditRecipie(props) {
     api()
       .put(`/api/posts/update/${props.match.params.id}`, recipie)
       .then((res) => {
-        props.history.push("/recipies");
+        props.history.push("/recipes");
       })
       .catch((err) => {
         console.log("Error editing recipie", err);

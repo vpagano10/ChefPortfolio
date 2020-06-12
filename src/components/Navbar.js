@@ -99,7 +99,7 @@ function Navbar() {
 
       <ProtectedRoute exact path="/recipes" component={Recipes} />
       <ProtectedRoute exact path="/chefs" component={Chefs} />
-      <ProtectedRoute exact path="/createrecipe/:id" component={CreateRecipe} />
+      <ProtectedRoute exact path="/addrecipe/:id" component={CreateRecipe} />
       <ProtectedRoute exact path="/editrecipie/:id" component={EditRecipe} />
       <ProtectedRoute exact path="/chef/:id" component={IndividualChef} />
     </>
