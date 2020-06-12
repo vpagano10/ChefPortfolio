@@ -1,0 +1,196 @@
+.recipies-page {
+  font-size: 1rem;
+  max-width: 1500px;
+  margin: auto;
+  overflow-x: hidden;
+  .add-recipie {
+    max-width: 30px;
+    max-height: 30px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 6px 8px 6px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #586b9f;
+    background-color: rgba(#586b9f, 0.25);
+    border: 2px solid #586b9f;
+    &:hover {
+      cursor: pointer;
+      color: dodgerblue;
+      background-color: rgba(#586b9f, 0.9);
+      border: 2px solid dodgerblue;
+    }
+  }
+  form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      color: black;
+    }
+    input {
+      font-size: 1rem;
+      padding: 15px;
+      width: 250px;
+      border: none;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .recipies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .recipie-card {
+      font-size: 1.2rem;
+      background-color: #212121;
+      color: whitesmoke;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      .recipie-card-edit-delete {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+        .edit-link {
+          text-decoration: none;
+          color: whitesmoke;
+          font-weight: bold;
+          padding: 5px 10px;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          &:hover {
+            cursor: pointer;
+            color: khaki;
+            border: 1px solid khaki;
+            background-color: rgba(240, 230, 140, 0.25);
+          }
+        }
+        p:last-child {
+          font-weight: bold;
+          padding: 5px 10px;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          &:hover {
+            cursor: pointer;
+            color: crimson;
+            border: 1px solid crimson;
+            background-color: rgba(220, 20, 60, 0.15);
+          }
+        }
+      }
+      .recipie-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border-top: 2px solid #586b9f;
+        border-bottom: 2px solid #586b9f;
+        margin: 2px 0;
+        padding: 0 10px;
+        .recipe-title {
+          color: #e63f21;
+        }
+      }
+      .recipie-card-image {
+        width: 100%;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .recipie-card-description {
+        padding-top: 15px;
+        height: 150px;
+      }
+      .recipie-card-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35px;
+        .chef-link {
+          text-decoration: none;
+          color: white;
+          padding: 5px;
+          &:hover {
+            color: #586b9f;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .recipie-card {
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+// // Edit Recipie Page
+
+.form-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  .edit-form-container {
+    display: flex;
+    flex-direction: column;
+    .cancel-link {
+      padding: 15px 0px;
+      text-decoration: none;
+      color: red;
+      opacity: 0.5;
+      width: 100px;
+      align-self: center;
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
+    label {
+      text-align: initial;
+    }
+    input {
+      width: 350px;
+      padding: 15px;
+      margin: 5px 0px;
+      border: none;
+      font-size: 1.2rem;
+    }
+    .form-submit-btn {
+      align-self: center;
+      margin: 15px 0px;
+      padding: 15px;
+      width: 200px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 25px;
+      border: none;
+      background-color: #e63f21;
+      color: white;
+      transition: 0.5s ease;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #e63f21;
+      }
+    }
+  }
+}

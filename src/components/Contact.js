@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <>
-      <div className="form-page-container">
+      <div className="auth-form-page-container">
         <form className="form-container">
           <label>Contact</label>
           <input

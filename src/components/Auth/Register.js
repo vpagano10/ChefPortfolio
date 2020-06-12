@@ -18,7 +18,7 @@ export default function Register() {
       .then((res) => {
         console.log(res);
         localStorage.setItem("token", res.data.token);
-        history.push("/recipies");
+        history.push("/recipes");
       })
       .catch((err) => {
         console.log("Error registering new user", err);
@@ -27,7 +27,7 @@ export default function Register() {
 
   return (
     <>
-      <div className="form-page-container">
+      <div className="auth-form-page-container">
         <form className="form-container" onSubmit={handleSubmit}>
           <label>Sign Up</label>
           <input

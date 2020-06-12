@@ -25,7 +25,7 @@ export default function Login() {
       .then((res) => {
         console.log(res);
         localStorage.setItem("token", res.data.token);
-        history.push("/recipies");
+        history.push("/recipes");
       })
       .catch((err) => {
         console.log("Error logging in user", err);
@@ -34,7 +34,7 @@ export default function Login() {
 
   return (
     <>
-      <div className="form-page-container">
+      <div className="auth-form-page-container">
         <form className="form-container" onSubmit={handleSubmit}>
           <label>Login</label>
           <input
