@@ -1,0 +1,19 @@
+.main-svg {
+  #grill-smoke-1,
+  #grill-smoke-2,
+  #grill-smoke-3 {
+    animation: smokeRise 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+    transform-origin: bottom;
+  }
+}
+
+@keyframes smokeRise {
+  from {
+    transform: translateX(-250px) translateY(-100px);
+  }
+  to {
+    transform: translateX(-250px) translateY(-200px);
+  }
+}

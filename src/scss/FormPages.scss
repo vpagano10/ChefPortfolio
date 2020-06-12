@@ -1,0 +1,36 @@
+.form-page-container {
+  text-align: center;
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    label {
+    }
+    input {
+      width: 350px;
+      padding: 15px;
+      margin: 5px 0px;
+      border: none;
+      font-size: 1.2rem;
+    }
+    .form-submit-btn {
+      margin: 15px 0px;
+      padding: 15px;
+      width: 200px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 25px;
+      border: none;
+      background-color: #e63f21;
+      color: white;
+      transition: 0.5s ease;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #e63f21;
+      }
+    }
+  }
+}

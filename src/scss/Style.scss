@@ -1,0 +1,108 @@
+body {
+  background-color: rgba(#faa412, 0.8);
+  font-family: "Sriracha", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-background {
+  margin: 150px 0px 50px 0px;
+  .page-container {
+    .top-title {
+      text-align: center;
+      font-size: 5rem;
+      .color-swap {
+        color: #e63f21;
+      }
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      .home-nav-left,
+      .home-nav-right {
+        display: flex;
+        margin: 75px 75px 100px 75px;
+      }
+      .home-nav-link {
+        text-decoration: none;
+        color: black;
+        padding: 0 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        &:hover {
+          cursor: pointer;
+          color: #586b9f;
+          text-decoration: underline;
+        }
+      }
+      .home-nav-social {
+        padding: 0 20px;
+        font-size: 1.4rem;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+          color: #586b9f;
+          text-decoration: underline;
+        }
+      }
+      .home-nav-social-contact {
+        text-decoration: none;
+        color: black;
+        padding: 0 20px;
+        font-size: 1.4rem;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+          color: #586b9f;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 75px 100px;
+  .text-content-container {
+    display: flex;
+    flex-direction: column;
+    .main-title-text {
+      font-size: 5rem;
+      letter-spacing: 4px;
+    }
+    .main-title-text-2 {
+      letter-spacing: 4px;
+      font-size: 5rem;
+      color: #e63f21;
+      text-decoration: underline;
+      margin-bottom: 25px;
+    }
+    .main-info-text {
+      font-size: 1.4rem;
+      margin-bottom: 25px;
+    }
+    .home-btn {
+      padding: 15px;
+      width: 200px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 25px;
+      border: none;
+      background-color: #e63f21;
+      color: white;
+      transition: 0.5s ease;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #e63f21;
+      }
+    }
+  }
+  .svg-container {
+  }
+}
